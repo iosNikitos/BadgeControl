@@ -67,8 +67,8 @@ open class BadgeView: UIView {
 
   private static func calculateWidth(height: CGFloat, borderWidth: CGFloat, text: String) -> CGFloat {
     let height = height - borderWidth * 2
-    let ratio = CGFloat(text.count > 0 ? text.count : 1)
-    return CGFloat(height + (ratio - 1) * height / 2.4) + borderWidth * 2
+    
+    return height
   }
 
   private func drawOval(_ height: CGFloat, _ ovalWidth: CGFloat, _ rightHemisphereX: CGFloat) {
